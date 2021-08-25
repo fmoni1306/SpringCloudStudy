@@ -1,0 +1,16 @@
+server:
+  port: 8761
+
+spring:
+  jpa:
+    # Caused by: org.h2.jdbc.JdbcSQLException: Table "CATALOG" not found; SQL statement:
+    # https://stackoverflow.com/questions/67695069/spring-boot-datasource-initialization-error-with-data-sql-script-after-2-5-0-upg
+    # defer-datasource-initialization: true
+  application:
+    name: discoveryservice
+
+eureka:
+  client:
+    # eureka 자신은 eureka 서버에 등록하지 않는 설정
+    register-with-eureka: false
+    fetch-registry: false
