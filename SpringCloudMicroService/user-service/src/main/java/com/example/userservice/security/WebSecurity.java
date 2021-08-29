@@ -24,8 +24,12 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable();
-//        http.authorizeRequests().antMatchers("/users/**").permitAll(); 전체에 대해 허가
-        http.authorizeRequests().antMatchers("/**") // 모든 사용자 제한
+//        http.authorizeRequests().antMatchers("/users/**").permitAll(); // 전체에 대해 허가
+
+        http.authorizeRequests().antMatchers("/actuator/**").permitAll();
+
+        http.authorizeRequests()
+                .antMatchers("/**") // 모든 사용자 제한
                 .hasIpAddress("192.168.219.104") // IP를 제한적으로 받음
                 .and()
                 .addFilter(getAuthenticationFilter()); // 필터를 통과한 데이터에 한에서 권한을 부여
