@@ -61,6 +61,9 @@ dependencies {
     // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bus-amqp
     implementation 'org.springframework.cloud:spring-cloud-starter-bus-amqp:3.0.3'
 
+    // Feign Client
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-openfeign
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:3.0.3'
 
 
 }

@@ -38,12 +38,13 @@ public class OrderServiceImpl implements OrderService {
         OrderEntity order = orderRepository.findByOrderId(orderId);
 
 
+
         return new ModelMapper().map(order, OrderDto.class);
     }
 
     @Override
     public Iterable<OrderEntity> getOrderByUserId(String userId) {
-        return orderRepository.findAll();
+        return orderRepository.findByUserId(userId);
     }
 
 }
