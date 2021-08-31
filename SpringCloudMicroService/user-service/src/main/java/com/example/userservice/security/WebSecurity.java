@@ -27,6 +27,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
 //        http.authorizeRequests().antMatchers("/users/**").permitAll(); // 전체에 대해 허가
 
         http.authorizeRequests().antMatchers("/actuator/**").permitAll();
+        http.authorizeRequests().antMatchers("/h2-console/**").permitAll();
 
         http.authorizeRequests()
                 .antMatchers("/**") // 모든 사용자 제한
