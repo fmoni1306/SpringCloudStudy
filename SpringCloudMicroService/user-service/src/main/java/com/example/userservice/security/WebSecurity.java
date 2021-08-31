@@ -27,11 +27,11 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
 //        http.authorizeRequests().antMatchers("/users/**").permitAll(); // 전체에 대해 허가
 
         http.authorizeRequests().antMatchers("/actuator/**").permitAll();
-        http.authorizeRequests().antMatchers("/h2-console/**").permitAll();
+//        http.authorizeRequests().antMatchers("/h2-console/**").permitAll();
 
         http.authorizeRequests()
                 .antMatchers("/**") // 모든 사용자 제한
-                .hasIpAddress("192.168.219.104") // IP를 제한적으로 받음
+                .hasIpAddress(env.getProperty("gateway.ip")) // IP를 제한적으로 받음
                 .and()
                 .addFilter(getAuthenticationFilter()); // 필터를 통과한 데이터에 한에서 권한을 부여
 
