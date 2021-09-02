@@ -28,7 +28,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
 
         http.authorizeRequests().antMatchers("/actuator/**").permitAll();
 //        http.authorizeRequests().antMatchers("/h2-console/**").permitAll();
-
+        System.out.println(env.getProperty("gateway.ip"));
         http.authorizeRequests()
                 .antMatchers("/**") // 모든 사용자 제한
                 .hasIpAddress(env.getProperty("gateway.ip")) // IP를 제한적으로 받음

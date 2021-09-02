@@ -39,14 +39,14 @@ dependencies {
 
     // spring cloud config
     // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-config
-    implementation 'org.springframework.cloud:spring-cloud-starter-config'
+    implementation 'org.springframework.cloud:spring-cloud-starter-config:3.0.4'
 
     // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bootstrap
-    implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
+    implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap:3.0.3'
 
     // spring boot actuator
     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator
-    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator:2.5.4'
 
     // spring boot amqp
     // 2.5.3 이상 버전에선 bus-amqp 를 쓰면 오류 발생함
