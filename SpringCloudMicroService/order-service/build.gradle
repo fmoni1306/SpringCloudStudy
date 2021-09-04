@@ -38,6 +38,9 @@ dependencies {
     //Maria DB
     implementation 'org.mariadb.jdbc:mariadb-java-client:2.7.4'
 
+    // Kafka
+    // https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka
+    implementation 'org.springframework.kafka:spring-kafka:2.7.6'
 }
 
 dependencyManagement {
