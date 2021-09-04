@@ -14,7 +14,7 @@ spring:
     config:
       server:
         native:
-          search-locations: file:///${user.home}/Desktop/native-file-repo-springcloud
+          search-locations: file:///${user.home}/Desktop/SpringCloud/native-file-repo-springcloud
         git:
           uri: https://github.com/fmoni1306/spring-cloud-config
 #          username: # private 인 경우 명시

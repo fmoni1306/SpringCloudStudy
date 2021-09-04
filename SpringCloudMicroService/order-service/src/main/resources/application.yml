@@ -12,15 +12,16 @@ spring:
       path: /h2-console
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
     show-sql: true
     generate-ddl: true
-    database: h2
+    database: mysql
 
   datasource:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:testdb
-    username: sa
+#    username: root
+#    password: 1234
 
 eureka:
   instance:

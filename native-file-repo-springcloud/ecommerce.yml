@@ -1,0 +1,6 @@
+token:
+  expiration_time: 86400000 # 하루 ms 단위
+  secret: '{cipher}AQBB6X2HE3T9mK//EW50fx43P2LmXU1rH4Uhzv6N1W+kniBYcyYHrvpXGFbbyfyubPwndKTb4NWPp3/meYMRSzHmpl8KsKHndpvUgCDmnNNcOxG9Ph+V/FlMuiqZav67M93sJZpU9Dv0mrWgDxN9oXltmno2greXD0GznSEp8k07AKT/IK//Ll3XgMrElFBgydCAqQTt8UyVGBrYJ2XdhEgPeadgiW9MM7c4HST1hI1dmwsVtPgS2Z5fLFZ30zYwy9e4y+YwwVBTDNMYl4RPOjTvHltkfo9Qfx3OGBMOCzHpHfrttBrjT8x+mEdwmvxFL2Qw6LohMu3u1dvaaSOaUL1gixYwjpeyRZfI4Y3L6rGfJZa/ICm9f88id7CZT7VB7vlZZEZz0lO6rABYGN8hRS/G0nt5HV3MXKyfLR8lEwZRVg=='
+
+gateway:
+  ip: 192.168.219.106

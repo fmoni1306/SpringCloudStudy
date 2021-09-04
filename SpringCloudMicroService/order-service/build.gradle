@@ -34,6 +34,10 @@ dependencies {
 
     //Model Mapper
     implementation 'org.modelmapper:modelmapper:2.4.4'
+
+    //Maria DB
+    implementation 'org.mariadb.jdbc:mariadb-java-client:2.7.4'
+
 }
 
 dependencyManagement {
