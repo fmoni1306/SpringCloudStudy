@@ -6,9 +6,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Field {
-
     private String type;
     private boolean optional;
-    private String filed;
-
+    private String field;
 }
