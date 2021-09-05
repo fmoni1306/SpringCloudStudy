@@ -47,22 +47,22 @@ public class OrderController {
         orderDto.setUserId(userId);
 
         /* jpa */
-//        OrderDto order = orderService.createOrder(orderDto);
-//        ResponseOrder responseOrder = mapper.map(order, ResponseOrder.class);
+        OrderDto order = orderService.createOrder(orderDto);
+        ResponseOrder responseOrder = mapper.map(order, ResponseOrder.class);
 
 
         // Kafka
         // 기존엔 OrderService 에서 생성하던 코드를 Controller 에서 처리
         // service 를 호출하지 않기 때문에 가져옴
-        orderDto.setOrderId(UUID.randomUUID().toString());
-        orderDto.setTotalPrice(orderDetails.getQty() * orderDetails.getUnitPrice());
+//        orderDto.setOrderId(UUID.randomUUID().toString());
+//        orderDto.setTotalPrice(orderDetails.getQty() * orderDetails.getUnitPrice());
 
 
         /* send this order to the kafka */
-        kafkaProducer.send("example-catalog-topic",orderDto);
-        orderProducer.send("orders", orderDto);
+//        kafkaProducer.send("example-catalog-topic",orderDto);
+//        orderProducer.send("orders", orderDto);
 
-        ResponseOrder responseOrder = mapper.map(orderDto, ResponseOrder.class);
+//        ResponseOrder responseOrder = mapper.map(orderDto, ResponseOrder.class);
 
         return ResponseEntity.status(HttpStatus.CREATED).body(responseOrder);
     }
