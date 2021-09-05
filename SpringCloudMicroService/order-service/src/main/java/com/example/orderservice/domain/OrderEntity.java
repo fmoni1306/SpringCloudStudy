@@ -38,5 +38,5 @@ public class OrderEntity implements Serializable {
 
     @Column(nullable = false, updatable = false, insertable = false)
     @ColumnDefault(value = "CURRENT_TIMESTAMP") // h2 에서 함수 호출
-    private Date createAt;
+    private Date createdAt;
 }

@@ -41,6 +41,14 @@ dependencies {
     // Kafka
     // https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka
     implementation 'org.springframework.kafka:spring-kafka:2.7.6'
+
+    // Spring Cloud Sleuth
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-sleuth
+    implementation 'org.springframework.cloud:spring-cloud-starter-sleuth:3.0.3'
+
+    // Spring Cloud Zipkin
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-sleuth-zipkin
+    implementation 'org.springframework.cloud:spring-cloud-sleuth-zipkin:3.0.3'
 }
 
 dependencyManagement {
