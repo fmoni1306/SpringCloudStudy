@@ -3,4 +3,4 @@ token:
   secret: user_token_native_application_changed
 
 gateway:
-  ip: 192.168.219.106
+  ip: 192.168.219.105
