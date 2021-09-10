@@ -51,6 +51,14 @@ spring:
             - RewritePath=/user-service/(?<segment>.*), /$\{segment}
             - AuthorizationHeaderFilter
         - id: user-service
+          uri: lb://ORDER-SERVICE
+          predicates:
+            - Path=/order-service/actuator/**
+            - Method=GET
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/order-service/(?<segment>.*), /$\{segment}
+        - id: user-service
           uri: lb://USER-SERVICE
           predicates:
             - Path=/user-service/actuator/**
@@ -103,3 +111,6 @@ management:
           - beans
           - httptrace
           - busrefresh
+          - info
+          - metrics
+          - prometheus

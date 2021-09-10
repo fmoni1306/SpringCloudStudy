@@ -53,6 +53,9 @@ management:
         - health
         - beans
         - busrefresh
+        - info
+        - metrics
+        - prometheus
 
 #token:
 #  expiration_time: 86400000 # 하루 ms 단위

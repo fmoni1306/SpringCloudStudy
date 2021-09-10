@@ -53,6 +53,10 @@ dependencies {
     // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bus-amqp
     implementation 'org.springframework.cloud:spring-cloud-starter-bus-amqp:3.0.3'
 
+    // Micrometer
+    // https://mvnrepository.com/artifact/io.micrometer/micrometer-registry-prometheus
+    implementation 'io.micrometer:micrometer-registry-prometheus:1.7.3'
+
 
 }
 

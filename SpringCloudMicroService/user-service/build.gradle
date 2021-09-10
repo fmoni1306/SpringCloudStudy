@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.example'
-version = '0.0.1-SNAPSHOT'
+version = '1.0'
 sourceCompatibility = '11'
 
 configurations {
@@ -76,6 +76,10 @@ dependencies {
     // Spring Cloud Zipkin
     // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-sleuth-zipkin
     implementation 'org.springframework.cloud:spring-cloud-sleuth-zipkin:3.0.3'
+
+    // Micrometer
+    // https://mvnrepository.com/artifact/io.micrometer/micrometer-registry-prometheus
+    implementation 'io.micrometer:micrometer-registry-prometheus:1.7.3'
 
 }
 

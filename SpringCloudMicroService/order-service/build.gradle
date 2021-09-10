@@ -49,6 +49,14 @@ dependencies {
     // Spring Cloud Zipkin
     // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-sleuth-zipkin
     implementation 'org.springframework.cloud:spring-cloud-sleuth-zipkin:3.0.3'
+
+    // spring boot actuator
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator
+    implementation 'org.springframework.boot:spring-boot-starter-actuator:2.5.4'
+
+    // Micrometer
+    // https://mvnrepository.com/artifact/io.micrometer/micrometer-registry-prometheus
+    implementation 'io.micrometer:micrometer-registry-prometheus:1.7.3'
 }
 
 dependencyManagement {
